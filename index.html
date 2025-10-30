@@ -1,96 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Perfil Profesional</title>
-    <meta name="autor" content="Alejandro Arévalo Merlo">
-    <meta name="descricion" content="Mi página personal creada con HTML">
+  <meta charset="UTF-8">
+  <title>Pagina usando HTML5</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <!-- Encabezado -->
-    <h1>Mi Perfil Profesional</h1>
+  <header>
+    <h1>Segunda web Lenguaje de marcas</h1>
+    <p>Estructura HTML5</p>
+  </header>
 
-    <!-- Menú -->
-    <p>
-        <a href="#datos">Datos personales</a> |
-        <a href="#formacion">Formación</a> |
-        <a href="#habilidades">Habilidades</a> |
-        <a href="#contacto">Contacto</a>
-    </p>
-
-    <hr>
-
-    <blockquote>
-        “La educación es el arma más poderosa que puedes usar para cambiar el mundo.”
-    </blockquote>
-
-    <!-- datos personales -->
-    <h2 id="datos">Datos personales</h2>
-    <!-- datos personales -->
-    <div>
-        <img src="img/fotopersonal.JPG" alt="Mi foto" title="Foto personal" width="150" height="150">
-
-        <dl>
-            <dt>Nombre:</dt>
-            <dd>Alejandro Arévalo Merlo</dd>
-            <dt>Edad:</dt>
-            <dd>20 años</dd>
-            <dt>Ciudad:</dt>
-            <dd>Jaén</dd>
-        </dl>
-
-        <p>
-            Soy una persona <span>con imaginacion</span> y con todavia mucho que aprender y muchas ganas de ello.
-        </p>
-    </div>
-
-    <hr>
-
-    <!-- Formación -->
-    <h2 id="formacion">Formación</h2>
-    <ol>
-        <li><strong>Técnico en SMR medio</strong> - <em>MEDAC Jaén</em></li>
-        <li><strong>ESO</strong> - <em>IES Santacatalina</em></li>
-    </ol>
-
-    <img src="img/formacionmedac.jpg" alt="Imagen de estudios" title="Mi instituto" width="300" height="200">
-
-    <hr>
-
-    <!-- Habilidades -->
-    <h2 id="habilidades">Habilidades e intereses</h2>
+  <nav>
     <ul>
-        <li>algo de HTML y java</li>
-        <li>Trabajo en equipo</li>
-        <li><mark>Interes por aprender como evoluciona la programacion</mark></li>
-        <li>Juegos y musica</li>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#formulario">Formulario</a></li>
+      <li><a href="#multimedia">Multimedia</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#autor">Autoría</a></li>
     </ul>
+  </nav>
 
-    <hr>
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido</h2>
+      <p>Esta es una página simple que demuestra las principales etiquetas semánticas de HTML5.</p>
+    </section>
 
-    <!-- Contacto -->
-    <h2 id="contacto">Contacto</h2>
-    <p>
-         Correo: aam0063@alumedac.es.com <br>
-         <a href="https://github.com/aam0063" target="_blank">Ver mi página en GitHub Pages</a><br>
-         <a href="https://aam0063.github.io/mi_perfil/" target="_blank">Ver mi repositorio</a>
-    </p>
+    <section id="formulario">
+      <h2>Formulario HTML5</h2>
+      <form>
+        <label>Email: <input type="email" placeholder="tu@correo.com" required></label><br><br>
+        <label>Web: <input type="url" placeholder="https://ejemplo.com"></label><br><br>
+        <label>Fecha de nacimiento: <input type="date"></label><br><br>
+        <label>Color favorito: <input type="color"></label><br><br>
+        <label>Edad: <input type="number" min="0" max="120" step="1"></label><br><br>
+        <label>Nivel de satisfacción: <input type="range" min="0" max="10" step="1"></label><br><br>
 
-    <!-- Imagen como enlace -->
-    <a href="https://github.com/usuario/mi_proyecto" target="_blank">
-        <img src="img/github.png" alt="Logo de GitHub" title="Ir al GitHub" width="100" height="100">
-    </a>
+        <p>Progreso del registro:</p>
+        <progress value="60" max="100">60%</progress><br><br>
 
-    <h3>Ubicación</h3>
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.3130562795845!2d-3.7968112234361837!3d37.75925711305262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd7a58f6600a1%3A0xc5b7137a23db1bb3!2sDavante%20MEDAC%20Vandelvira%20%F0%9F%A5%87%20Centro%20FP%20Ja%C3%A9n!5e0!3m2!1sen!2ses!4v1760547188751!5m2!1sen!2ses"
-        width="400" height="300">
-    </iframe>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
 
-    <hr>
+    <section id="multimedia">
+      <h2>Contenido multimedia</h2>
 
-    <p><small> 2025 - Mi Perfil Profesional - Alejandro Arévalo Merlo</small></p>
+      <article>
+        <h3>Audio</h3>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </article>
+
+      <article>
+        <h3>Video</h3>
+        <video controls width="400" poster="poster.jpg">
+          <source src="video.mp4" type="video/mp4">
+          Tu navegador no soporta el elemento de video.
+        </video>
+      </article>
+    </section>
+
+    <aside>
+      <h3>Dato adicional</h3>
+      <p>Esta página está creada solo con HTML5 y enlaza un archivo CSS externo.</p>
+    </aside>
+
+    <section id="faq">
+      <h2>Preguntas Frecuentes</h2>
+
+      <details>
+        <summary>¿Qué lenguaje se usó para crear esta página?</summary>
+        <p>Se utilizó HTML5, con etiquetas semánticas modernas.</p>
+      </details>
+
+      <details>
+        <summary>¿Para qué sirve el formulario?</summary>
+        <p>Demuestra los nuevos tipos de entrada de HTML5.</p>
+      </details>
+
+      <details>
+        <summary>¿Qué muestran los controles multimedia?</summary>
+        <p>Ejemplos de audio y video insertados con sus etiquetas correspondientes.</p>
+      </details>
+    </section>
+
+    <section id="autor">
+      <h2>Video de autoría</h2>
+      <p>Presentación del trabajo realizada por el estudiante:</p>
+      <video controls width="400">
+        <source src="autor.mp4" type="video/mp4">
+        Tu navegador no soporta este video.
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mi sitio web - Todos los derechos reservados</p>
+  </footer>
 
 </body>
 </html>

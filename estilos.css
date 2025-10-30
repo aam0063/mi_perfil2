@@ -1,0 +1,28 @@
+
+header {
+  border: 3px solid red;
+}
+
+nav {
+  border: 3px solid orange;
+}
+
+main {
+  border: 3px solid green;
+}
+
+section {
+  border: 3px solid blue;
+}
+
+article {
+  border: 3px solid purple;
+}
+
+aside {
+  border: 3px solid brown;
+}
+
+footer {
+  border: 3px solid gray;
+}
